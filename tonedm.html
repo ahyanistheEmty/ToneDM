@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summary Tool</title>
+    <link rel="stylesheet" href="Summarydm.css">
+</head>
+<body>
+    <button id="menu-btn">☰ Menu</button>
+
+    <nav id="menu-list">
+        <a href="ai.html">AI Summary</a>
+        <a href="https://ahyanistheemty.github.io/Yodm-home/Yodm_home.html">Home</a>
+        <a href="https://ahyanistheemty.github.io/Yodm/Yodm.html">YoDM</a>
+        <a href="https://ahyanistheemty.github.io/Summarydm/Summarydm/Summarydm.html">SummaryDM</a>
+        <a href="https://ahyanistheemty.github.io/Spelldm/Spelldm.html">SpellDM</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="text-container">
+                <textarea id="text-input" placeholder="Enter your text here or drop a file"></textarea>
+            </div>
+            <input type="file" id="file-input" style="display: none;">
+            <button id="browse-button">Browse Files</button>
+        </div>
+
+        <div class="sidebar">
+            <h3>Tone Options</h3>
+            <div id="tone-options">
+                <button class="tone-button" data-tone="assertive">Assertive</button>
+                <button class="tone-button" data-tone="confident">Confident</button>
+                <button class="tone-button" data-tone="constructive">Constructive</button>
+                <button class="tone-button" data-tone="diplomatic">Diplomatic</button>
+                <button class="tone-button" data-tone="empathetic">Empathetic</button>
+                <button class="tone-button" data-tone="friendly">Friendly</button>
+                <button class="tone-button" data-tone="inspirational">Inspirational</button>
+                <button class="tone-button" data-tone="casual">Casual</button>
+                <button class="tone-button" data-tone="formal">Formal</button>
+                <button class="tone-button" data-tone="persuasive">Persuasive</button>
+                <button class="tone-button" data-tone="direct">Direct</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="summary-popup" class="popup">
+        <div id="popup-content" class="popup-content">
+            <span class="close">&times;</span>
+            <div id="summary-output" class="summary-output"></div>
+        </div>
+    </div>
+
+    <script src="Summarydm.js"></script>
+</body>
+</html>
