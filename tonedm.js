@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             try {
                 const toneInstruction = `${button.textContent}\n\n`;
-                const response = await fetch('https://11pwcqff-3003.inc1.devtunnels.ms/summarize', {
+                const response = await fetch('https://sgf925pg-3003.inc1.devtunnels.ms/summarize', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
